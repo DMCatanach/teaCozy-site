@@ -1,0 +1,18 @@
+body {
+	font-family: Helvetica;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+	text-align: center;
+}
+
+header {
+	display: inline-flex;
+	text-decoration: underline;
+}
+
+header p {
+	padding: 10px;
+	align-items: flex-end; /* this is not pushing the menu items to the right of the page, everything is still centered */
+}
