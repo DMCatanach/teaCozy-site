@@ -4,15 +4,53 @@ body {
 	color: seashell;
 	background-color: black;
 	opacity: 0.9;
-	text-align: center;
+	
 }
 
 header {
-	display: inline-flex;
-	text-decoration: underline;
+	background-color: black;
+	position: fixed;
+	display: flex;
+	top: 0;
+	width: 100%;
+	height: 69px;
+	border-bottom: 1px solid seashell;
 }
 
 header p {
-	padding: 10px;
-	align-items: flex-end; /* this is not pushing the menu items to the right of the page, everything is still centered */
+	/*padding: 10px;*/
+	/*float: right;*/ /* This reverses the order of the items. */
+	padding: 0 20px;
+	display: inline-flex;
+	text-decoration: underline;
+	justify-content: flex-end; 
+}
+
+header img {
+	height: 50px;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+.main {
+	margin-top: 70px;
+	text-align: center;
+}
+
+.Mission {
+	background: url(Images/img-mission-background.jpg);
+	background-size: cover;
+} /* This accomplishes pretty much the opposite of what's in the spec */
+
+.Featured img {
+	width: 300px;
+	height: 200px;
+}
+
+.Locations {
+	background-image: url(Images/img-locations-background.jpg);
+	background-size: cover;
+	width: 1200px;
+	height: 500px;
 }
