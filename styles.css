@@ -11,26 +11,28 @@ header {
 	background-color: black;
 	position: fixed;
 	display: flex;
+	justify-content: flex-end; /*this puts the links at the end, but also the image */ 
 	top: 0;
 	width: 100%;
 	height: 69px;
 	border-bottom: 1px solid seashell;
 }
 
-header p {
-	/*padding: 10px;*/
-	/*float: right;*/ /* This reverses the order of the items. */
+nav {
+	text-align: right; /* This without inline block specified in nav p stacks nav links w/ right alignment; with inline block, doesn't seem to make a difference. */
+}
+
+nav p {
+	padding: 10px;
 	padding: 0 20px;
-	display: inline-flex;
 	text-decoration: underline;
-	justify-content: flex-end; 
+	display: inline-block;
 }
 
 header img {
 	height: 50px;
 	margin-left: 10px;
 	margin-top: 10px;
-	float: left;
 }
 
 .main {
