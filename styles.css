@@ -51,7 +51,6 @@ nav span {
 	padding: 20px 10px;
 }
 
-
 /* Main */ 
 
 .main {
@@ -80,16 +79,33 @@ nav span {
 
 /* Featured Section */
 
-#Featured img {
-	width: 300px;
+#Featured {
+	height: 700px;
+	margin: auto;
+	width: 1000px;
+}
+
+.tea {
+	padding: 5px;
+}
+
+.tea img {
+	display: block;
 	height: 200px;
+	margin: 10px;
+	width: 300px;
+}
+
+.tea span {
+	font-weight: bold;
 }
 
 /* Locations Section */ 
 
 #Locations {
 	background-image: url(Images/img-locations-background.jpg);
+	background-position: center;
 	background-size: cover;
-	width: 1200px;
 	height: 500px;
+	width: 1200px;
 }
