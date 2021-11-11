@@ -129,3 +129,14 @@ nav span {
 }
 
 /* Contact Section */ 
+
+#contact {
+	height: 200px;
+}
+
+/* Footer Section */ 
+
+footer {
+	padding-left: 20px;
+	text-align: left;
+}
