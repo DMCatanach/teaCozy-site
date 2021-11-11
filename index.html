@@ -5,28 +5,30 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<header>
+	<header class="flex-container">
 		<!-- Logo image goes at the start -->
 		<img src="Images/img-tea-cozy-logo.png">
-		<!-- I have these as p tags with underline decorations, but they should be internal links. -->
+
 		<nav>
-			<p>Mission</p>
-			<p>Featured Tea</p>
-			<p>Locations</p>
+			<span><a href="#Mission">Mission</a></span>
+			<span><a href="#Featured">Featured Tea</a></span>
+			<span><a href="#Locations">Locations</a></span>
 		</nav>
 	</header>
 
 	<div class="main">
 
 	<!-- Mission -->
-	<div class="Mission">
-		<h2>Our Mission</h2>
-		<h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+	<div id="Mission" class="flex-container">
+		<div class="banner">
+			<h2>Our Mission</h2>
+			<h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+		</div>
 		<!-- <img src=""> -->
 	</div>
 
 	<!-- Featured Tea --> 
-	<div class="Featured">
+	<div id="Featured">
 		<h2>Tea of the Month</h2>
 		<h4>What's Steeping at The Tea Cozy?</h4>
 		<div class="teas">
@@ -43,19 +45,22 @@
 		</div>
 
 	<!-- Locations -->
-	<div class="Locations">
+	<div id="Locations">
 		<!-- Flex containers(?) for the three locations with a background image -->
 		<!-- <img src="Images/img-locations-background.jpg"> -->
+	</div>
+
+<!-- Contact -->
+	<div id=contact>
+		<p>The Tea Cozy</p>
+		<h5>contact@theteacozy.com</h5>
+		<h5>917-555-8904</h5>
 	</div>
 </div>
 
 	<footer>
-		<div class=contact>
-			<p>The Tea Cozy</p>
-			<h5>contact@theteacozy.com</h5>
-			<h5>917-555-8904</h5>
-		</div>
-		<div class="copyright">
+		
+		<div id="copyright">
 			<p>copyright The Tea Cozy 2017</p>
 		</div>
 	</footer>

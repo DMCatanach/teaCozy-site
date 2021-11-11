@@ -1,56 +1,93 @@
+/* Universal Styles */
+
 body {
+	background-color: black;
+	color: seashell;
 	font-family: Helvetica;
 	font-size: 22px;
-	color: seashell;
-	background-color: black;
-	opacity: 0.9;
-	
+	margin: 0;
+	text-align: center;
 }
+
+a {
+	color: seashell;
+}
+
+h2, h3, h4 {
+	margin: 0;
+	padding: 10px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* Header */ 
 
 header {
+	align-items: center;
 	background-color: black;
-	position: fixed;
-	display: flex;
-	justify-content: flex-end; /*this puts the links at the end, but also the image */ 
-	top: 0;
-	width: 100%;
-	height: 69px;
 	border-bottom: 1px solid seashell;
-}
-
-nav {
-	text-align: right; /* This without inline block specified in nav p stacks nav links w/ right alignment; with inline block, doesn't seem to make a difference. */
-}
-
-nav p {
-	padding: 10px;
-	padding: 0 20px;
-	text-decoration: underline;
-	display: inline-block;
+	height: 69px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }
 
 header img {
 	height: 50px;
-	margin-left: 10px;
-	margin-top: 10px;
+	padding-left: 10px;
 }
+
+nav {
+	text-align: right; 
+	flex-grow: 1;
+}
+
+nav span {
+	display: inline-block;
+	padding: 20px 10px;
+}
+
+
+/* Main */ 
 
 .main {
-	margin-top: 70px;
-	text-align: center;
+	margin: auto;
+	opacity: 0.9;
+	padding-top: 69px;
+	width: 1200px;
 }
 
-.Mission {
-	background: url(Images/img-mission-background.jpg);
-	background-size: cover;
-} /* This accomplishes pretty much the opposite of what's in the spec */
+/* Mission Section */ 
 
-.Featured img {
+#Mission {
+	background-image: url("Images/img-mission-background.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 700px;
+	padding-top: 70px;
+} 
+
+#Mission .banner {
+	background-color: black;
+	margin: auto;
+	width: 100%;
+}
+
+
+/* Featured Section */
+
+#Featured img {
 	width: 300px;
 	height: 200px;
 }
 
-.Locations {
+/* Locations Section */ 
+
+#Locations {
 	background-image: url(Images/img-locations-background.jpg);
 	background-size: cover;
 	width: 1200px;
